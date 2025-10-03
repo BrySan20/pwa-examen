@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Universidad</title>
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Universidad</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
-    <!-- APP SHELL -->
-    <header>
-        <h1>Mi Universidad</h1>
-    </header>
+  <header>
+    <h1>Mi Universidad</h1>
+  </header>
 
-    <nav id="menu">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#" onclick="cargarMaterias()">Materias</a></li>
-            <li><a href="#">Horarios</a></li>
-            <li><a href="#">Perfil</a></li>
-        </ul>
-    </nav>
+  <div class="app-container">
+    <aside id="sidebar">
+      <ul>
+        <li><a href="#" onclick="mostrarInicio()">Inicio</a></li>
+        <li><a href="#" onclick="cargarMaterias()">Materias</a></li>
+        <li><a href="#">Horarios</a></li>
+        <li><a href="#">Perfil</a></li>
+      </ul>
+    </aside>
 
     <main id="contenido">
-        <p>Bienvenido a la app de Mi Universidad</p>
+      <p>Bienvenido a la app de Mi Universidad</p>
     </main>
+  </div>
 
-    <footer>
-        <p>Universidad XYZ – 2025</p>
-    </footer>
+  <footer>
+    <p>Universidad XYZ – 2025</p>
+  </footer>
 
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
-
 </html>
